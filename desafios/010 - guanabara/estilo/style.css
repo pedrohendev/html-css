@@ -148,7 +148,7 @@ main img.pequena {
     margin: auto;
 }
 
-div.video {
+div#container {
     background-color: var(--cor5);
     margin-bottom: 30px;
     margin: 0px -20px 30px -20px;
@@ -157,12 +157,21 @@ div.video {
     position: relative;
 }
 
-div.video > iframe {
+div#container > {
+    background-size: 100% 100%;
+    position: relative;
+    height: 96vh;
+    padding: 10px;
+}
+
+div#conteudo {
+    background-size: 100% 100%;
     position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
+    height: 200px;
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-70%, -80%);
 }
 
 article h1 {
