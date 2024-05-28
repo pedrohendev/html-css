@@ -4,28 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Formulario</title>
 </head>
 
 <body>
-    <h1>Exemplo de formulário</h1>
-    <form action="cadastro.js" method="get" autocomplete="on">
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.js" autocomplete="on">
         <fieldset>
-            <legend>Dados pessoais</legend>
-            <p>
-                <label for="inome">Nome</label>
-                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
-            </p>
-            <p>
-                <label for="iemail">E-mail</label>
-                <input type="email" name="email" id="imail" autocomplete="email" required>
-            </p>
-            <p>
-                <label for="itel">Telefone</label>
-                <input type="tel" name="telefone" id="itel" autocomplete="tel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx) xxxx-xxxx">
-            </p>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" checked> <label for="isxmas">Maculino</label> <br>
+            <input type="radio" name="sexo" id="isxfem"> <label for="isxfem">Feminino</label>
         </fieldset>
-        <!-- Estudar mais sobre RegEx-->
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas" checked> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+        </fieldset>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">

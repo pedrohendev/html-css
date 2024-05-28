@@ -4,25 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Exemplo de formuilario</title>
 </head>
 
 <body>
     <h1>Exemplo de Formulario</h1>
-    <form action="cadastro.js" autocomplete="on">
-        <fieldset>
-            <legend>Sexo</legend>
-            <input type="radio" name="sexo" id="isxmas" checked> <label for="isxmas">Maculino</label> <br>
-            <input type="radio" name="sexo" id="isxfem"> <label for="isxfem">Feminino</label>
-        </fieldset>
-        <fieldset>
-            <legend>Esportes favoritos</legend>
-            <input type="checkbox" name="esbas" id="iesbas" checked> <label for="iesbas">Basquete</label> <br>
-            <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label> <br>
-            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
-            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
-        </fieldset>
-
+    <form action="cadastro.js" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+        <p>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="0" max="1000" value="563">
+        </p>
+        <P>
+            <label for="ifoto">Foto de perfil</label> <!--Usar no metodo post--> 
+            <input type="file" name="foto" id="ifoto">
+        </P>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
