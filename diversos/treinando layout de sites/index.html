@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 7px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        div.container{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: stretch;
+            justify-content: space-around;
+            border: 1px solid black;
+            background-color: lightgray;
+        }
+
+        header {
+            display: flex;
+            border: 1px solid black;
+            margin: 0px;
+            align-self: center;
+            
+            flex: 0 0 auto;
+        }
+
+        nav {
+            border: 1px solid black;
+            padding-right: 20px;
+            flex: 0 0 auto;
+            align-self: center;
+        }
+
+        div#headerBanner {
+            padding: 45px;
+        }
+
+        div#introTextArea {
+            padding: 30px;
+        }
+
+        div#Box {
+            height: 200px;
+            text-align: center;
+        }
+
+        div.box1 {
+            border: 2px solid black;
+            flex: 0 0 90px; 
+        }
+
+        div.box2 {
+            border: 2px solid black;
+            flex: 0 0 90px;
+        }
+
+        div.box3 {
+            border: 2px solid black;
+            flex: 0 0 90px;
+        }
+
+        footer {
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Logo</h1>
+        </header>
+        <nav>
+            <a href="">Navegation</a>
+        </nav>
+    </div>
+    <div class="container" id="headerBanner">
+        <h1>Header / Banner</h1>
+    </div>
+    <div class="container" id="introTextArea">
+        <h1>Intro Text Area</h1>
+    </div>
+    <div class="container" id="Box">
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+        <div class="box3">Box 3</div>
+    </div>
+    <div class="container">
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+
+</html>
