@@ -387,7 +387,6 @@ section {
     transition: all .3s linear;
     display: inline-block;
     border-width: 3px;
-    border-style: solid;
 }
 
 /* Play Button */
