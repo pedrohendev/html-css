@@ -1,5 +1,5 @@
 /*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById('nav-menu')
+const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
 
@@ -16,10 +16,11 @@ const navMenu = document.getElementById('nav-menu')
     }
 
 /*=============== REMOVE MENU MOBILE ===============*/
-const navLink = document.querySelector('nav__link')
+
+const navLink = document.querySelectorAll('.nav__link')
 
 const linkAction = () => {
-    document.getElementById('nav-menu')
+    const  navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show-menu')
 }
 
