@@ -330,7 +330,7 @@ img {
   text-align: center;
 }
 
-.home__pefil{
+.home__perfil{
   position: relative;
   justify-self: center;
 }
@@ -344,7 +344,7 @@ img {
   z-index: 10;
 }
 
-.home__shadow {
+.home__shadow{
   width: 100%;
   height: 100%;
   background-color: var(--container-color);
@@ -374,13 +374,13 @@ img {
   bottom: -.5rem;
 }
 
-.home__pefil .geometric-box{
+.home__perfil .geometric-box{
   top: 2.5rem;
   left: -.7rem;
   z-index: 10;
 }
 
-.home__social {
+.home__social{
   height: max-content;
   position: absolute;
   left: -3rem;
@@ -421,7 +421,7 @@ img {
               hsla(14, 98%, 50%, 0));
 }
 
-.home__social{
+.home__scroll {
   display: block;
   width: max-content;
   margin: 0 auto;
