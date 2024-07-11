@@ -44,7 +44,7 @@ const sendEmail = (e) =>{
     // serviceID - templateID - #form - publicKey
     emailjs.sendForm('service_2k3jiay','template_kl8qfpk','#contact-form','0hSLbow_Naj77Cu2a')
     .then(() =>{
-        contactMessage.textContent = 'Message sent successfully '
+        contactMessage.textContent = 'Message send successfully ✅'
 
         setTimeout(()=>{
             contactMessage.textContent = ''
@@ -53,18 +53,39 @@ const sendEmail = (e) =>{
         contactForm.reset()
         
     }, ()=> {
-        contactMessage.textContent = 'Message not sent (service error)'
+        contactMessage.textContent = 'Message not sent (service error) ❌'
     })
 }
 
 contactForm.addEventListener('submit', sendEmail)
 
 /*=============== SHOW SCROLL UP ===============*/ 
-
-
+const scrollUp = () =>{
+    const scrollUp = document.getElementById('scroll-up')
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                        : scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]')
 
+const scrollActive = () => {
+    const scrollDown = window.scrollY
 
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+            sectionTop = current.offsetTop - 58,
+            sectionId = current.getAttribute('id')
+            sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+
+            if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
+                sectionsClass.classList.add('active-link')
+            }else{
+                sectionsClass.classList.remove('active-link')
+            }
+    })
+}
+window.addEventListener('scroll', scrollActive)
 /*=============== DARK LIGHT THEME ===============*/ 
 
 
