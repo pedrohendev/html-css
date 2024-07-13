@@ -47,7 +47,7 @@ const sendEmail = (e) => {
     )
     .then(
       () => {
-        contactMessage.textContent = "Message send successfully ✅";
+        contactMessage.textContent = "Mensagem enviada com sucesso ✅";
 
         setTimeout(() => {
           contactMessage.textContent = "";
@@ -56,7 +56,7 @@ const sendEmail = (e) => {
         contactForm.reset();
       },
       () => {
-        contactMessage.textContent = "Message not sent (service error) ❌";
+        contactMessage.textContent = "Mensagem não enviada (erro no servidor) ❌";
       }
     );
 };
