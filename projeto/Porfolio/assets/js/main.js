@@ -110,3 +110,7 @@ sr.reveal(
 );
 
 sr.reveal(`.services__card .projects__card`, { interval: 100 });
+
+const themeButton = document.getElementById(`theme-buttom`)
+const darkTheme = `dark-theme`
+const iconTheme = `bx-sun`
